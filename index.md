@@ -13,7 +13,7 @@ layout: base
 <h1>{{ page.heading }}</h1>
 <p>{{ page.intro }}</p>
 
-<img src="assets/images/ss-logo-w-bg.png" alt="Seaweed Sandwich" />
+<img src="assets/images/ss-logo-w-bg.png" alt="Seaweed Sandwich" class="img-responsive" />
 
 <svg id="t1" xmlns="http://www.w3.org/2000/svg" width="550" height="150" viewBox="0 0 275 75">
   <path fill="none" stroke="#000" d="M22.5 8c-1.8 3-1.4 23.7-5.8 32.4-4.3 8.6-2 21.3-5.4 26.3"/>
