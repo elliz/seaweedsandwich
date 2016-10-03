@@ -1,8 +1,6 @@
-greenshoots
-===========
+seaweed sandwich
+================
 
-Github pages trial for Greenshoots
+Github pages trial 
 
-Look at it at http://elliz.github.io/greenshoots very much a work in progress playing with Jekyll
-
-Remember to change to the gh-pages branch
+Look at it at http://elliz.github.io/seaweedsandwich
