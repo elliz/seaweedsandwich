@@ -26,32 +26,44 @@ layout: base
 
 <button id="rerun">Re-run</button>
 
+<style type="text/css">
+#t1 path {
+  stroke: green;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+</style>
+
 <script>
 
-var msPerPixel = 5;
-var delay = 0;
+$( document ).ready(function() {
+  var msPerPixel = 5;
+  var delay = 0;
 
-anim();
+  anim();
 
-$("#rerun").on("click", function() { delay = 0; anim(); });
+  $("#rerun").on("click", function() { delay = 0; anim(); });
 
-function anim () {
-  $("#t1 path").each( function (index, value) {
-    init(this);
-  });
-}
+  function anim () {
+    $("#t1 path").each( function (index, value) {
+      init(this);
+    });
+  }
 
-function init (el){
-  var len = el.getTotalLength();
-  el.style.strokeDasharray = len + " " + len * 2;
-  el.style.strokeDashoffset = len;
-  el.getBoundingClientRect();
-  var duration = msPerPixel * len;
-  $(el).velocity({
-      properties: { strokeDashoffset: 0 },
-      options: {duration: duration, delay: delay, easing: "linear"}
-  });
-  delay = delay + duration;
-}
+  function init (el){
+    var len = el.getTotalLength();
+    el.style.strokeDasharray = len + " " + len * 2;
+    el.style.strokeDashoffset = len;
+    el.getBoundingClientRect();
+    var duration = msPerPixel * len;
+    $(el).velocity({
+        properties: { strokeDashoffset: 0 },
+        options: {duration: duration, delay: delay, easing: "linear"}
+    });
+    delay = delay + duration;
+  }
+});
+
 
 </script>
