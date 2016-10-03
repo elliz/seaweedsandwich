@@ -26,6 +26,11 @@ layout: base
 
 <button id="rerun">Re-run</button>
 
+<p>
+Find us on <a href="https://www.facebook.com/Seaweedsandwich">Facebook</a> and <a href="https://www.twitter.com">Twitter</a>
+</p>
+
+
 <style type="text/css">
 #t1 path {
   stroke: green;
@@ -34,6 +39,8 @@ layout: base
   stroke-linejoin: round;
 }
 </style>
+
+
 
 <script>
 
