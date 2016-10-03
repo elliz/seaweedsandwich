@@ -1,7 +1,7 @@
 ---
 title: "Adventures by the coast - Seaweed Sandwich"
 description: 
-heading: Welcome
+heading: Seaweed Sandwich
 intro: "Adventures by the coast."
 
 section: home
