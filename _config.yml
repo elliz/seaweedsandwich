@@ -12,7 +12,7 @@ url: http://elliz.github.io/seaweedsandwich/
 
 relative_permalinks: false
 permalink: /:categories/:title
-highlighter: pygments
+highlighter: rouge
 
 future: false 
 
