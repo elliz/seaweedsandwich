@@ -1,19 +1,15 @@
-name: "Greenshoots"
-description: "Photography for industry and science."
+name: "Seaweed Sandwich"
+description: "Playing by the sea"
 
-# local
-# baseurl: /_site/
-# url: http://www.greenshoots.co.uk/
 
 # github
-baseurl: "/greenshoots/"
-url: http://elliz.github.io/greenshoots/
+baseurl: "/seaweedsandwich/"
+url: http://elliz.github.io/seaweedsandwich/
 
 # live
 # baseurl: "/"
 # url: http://www.greenshoots.co.uk/
 
-include: ['_redirects']
 relative_permalinks: false
 permalink: /:categories/:title
 highlighter: pygments
@@ -29,10 +25,10 @@ gems:
 
 # Photos collection in portfolio folder
 
-collections:
-  images:
-    output: true
-    permalink: /portfolio/:path/
+#collections:
+#  images:
+#    output: true
+#    permalink: /portfolio/:path/
 
 
 compress_html:
