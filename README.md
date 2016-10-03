@@ -1,13 +1,8 @@
-Greenshoots
+Seaweed Sandwich
 ===========
 
-github pages trial for Greenshoots.
+github pages trial.
 
-This test site is available at http://elliz.github.io/greenshoots/
+This test site is available at http://elliz.github.io/seaweedsandwich/
 
-The live site is at http://www.greenshoots.co.uk/
-
-TODO
-=======
-
-Add explanation and more content here
+The live site is at ...
