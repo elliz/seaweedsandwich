@@ -19,10 +19,44 @@
 
     </div> <!-- /container -->
 
-    <script src="{{ site.baseurl }}assets/js/jquery-1.11.3.min.js"></script>
+    <script src="{{ site.baseurl }}assets/js/jquery-3.1.1.min.js"></script>
     <script src="{{ site.baseurl }}assets/js/velocity.min.js"></script>
 
     <script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
+
+
+<script>
+
+$( document ).ready(function() {
+  var msPerPixel = 5;
+  var delay = 0;
+
+  anim();
+
+  $("#rerun").on("click", function() { delay = 0; anim(); });
+
+  function anim () {
+    $("#t1 path").each( function (index, value) {
+      init(this);
+    });
+  }
+
+  function init (el){
+    var len = el.getTotalLength();
+    el.style.strokeDasharray = len + " " + len * 2;
+    el.style.strokeDashoffset = len;
+    el.getBoundingClientRect();
+    var duration = msPerPixel * len;
+    $(el).velocity({
+        properties: { strokeDashoffset: 0 },
+        options: {duration: duration, delay: delay, easing: "linear"}
+    });
+    delay = delay + duration;
+  }
+});
+
+
+</script>
 
 </body>
 </html>
